@@ -1,5 +1,5 @@
 // Que 1 : Input a value and check whether its positive, negative or Zero
-// Ans : 
+// // Ans : 
 let a=parseInt(prompt('Enter a value : '))
 if(a>=0){
     if(a==0){
@@ -12,11 +12,17 @@ if(a>=0){
     alert('Negative!')
 }
 
-// Que 4 : 
+// Que 2 : Check if a given year is a leap year or not.
 // Ans :
+    let b=parseInt(prompt('enter the year'))
+    if((0==b%4)&&(0!=b%100)||(0==b%400)){
+        console.log(b +'is a leap year')
+    }else {
+        console.log(b +'is not a leap year')
+    }
 
-// Que 3 : find if a number is even or odd 
-// Ans :
+// // Que 3 : find if a number is even or odd 
+// // Ans :
 let c=parseInt(prompt('Input a value : '))
 if(c%2==0){
     alert('Even')
@@ -25,11 +31,11 @@ else{
     alert('Odd')
 }
 
-// Que 4 : Find maximum of three numbers
-// Ans : 
-let d1=parseInt('Input first value : ')
-let d2=parseInt('Input second value : ')
-let d3=parseInt('Input third value : ')
+// // Que 4 : Find maximum of three numbers
+// // Ans : 
+let d1=parseInt(prompt('Input first value :'))
+let d2=parseInt(prompt('Input second value :'))
+let d3=parseInt(prompt('Input third value :'))
 if(d1>=d2 && d1>=d3){
     alert('First value is maximum!')
 } else if(d2>=d1 && d2>=d3){
@@ -42,8 +48,8 @@ else{
     alert('Invalid input numbers!')
 }
 
-// Que 5 : Find sum of positive numbers in an array
-// Ans :
+// // Que 5 : Find sum of positive numbers in an array
+// // Ans :
 let e1=parseInt(prompt('Input first value : '))
 let e2=parseInt(prompt('Input second value : '))
 let e3=parseInt(prompt('Input third value : '))
@@ -63,46 +69,160 @@ if(e3%2==0){
 } else{
     console.log(" ")
 }
-console.log(sum)
+console.log(e_sum)
 
-// Que 6 : Check if a number is prime or not
-// Ans : 
+// // Que 6 : Check if a number is prime or not
+// // Ans : 
 let f=parseInt(prompt('Input a value : '))
 for(let i=2;i<=f;i++){
     if(f%i==0){
         if(i==f){
-            console.log("Prime number!")
+            alert("Prime number!")
         } else{
-            console.log("Not a prime number!")
+            alert("Not a prime number!")
         }
     } else{
-        console.log(" ")
+        alert(" ")
     }
 }
 
-// Que 7 : Calculate factorial of a given number
-// Ans : 
-let g=parseInt('Input a number : ')
-let g_fact=1;
-for(let i=1;i<=g;i++){
-     if(i!=g){
-        fact=fact*i;
-     }
-     else{
-        break
-     }
+// // Que 7 : Calculate factorial of a given number
+// // Ans :
+let number = parseInt(prompt('Enter a positive integer: '));
+if (number < 0) {
+    console.log('Error! Factorial for negative number does not exist.');
 }
-console.log(fact)
+else if (number === 0) {
+    console.log("The factorial of ${number} is 1");
+}
+else {
+    let fact = 1;
+    for (i = 1; i <= number; i++) {
+        fact *= i;
+    }
+    console.log("The factorial of ${number} is ${fact}");
+}
 
-// Que 8 : Convert Tempreture given into Celsius to fehrenheit
-// Ans : 
+// // Que 8 : Convert Tempreture given into Celsius to fehrenheit
+// // Ans : 
 let h=parseFloat(prompt('Input Tempreture in Celsius : '))
-let h1=h*1.8;
+let h1=(h*1.8)+32;
 console.log(h1)
 
-// Que 9 : Check if number is perfect square or not
+// // Que 9 : Check if number is perfect square or not
+// // Ans : 
+let i = prompt('Enter the number: ');
+let i1 = Math.sqrt(i);
+console.log("The square root of ${i} is ${i1}");
+
+// Que 10 : Find the largest element in an array.
+// Ans :
+
+// Que 11 : Determine the eligibility of a person to vote based on their age.
+// Ans :
+
+// Que 12 :Check if a given character is a vowel or consonant
 // Ans : 
-let i=parseInt(prompt('Input a number : '))
+
+// Que 13 :Calculate the area of a triangle given base and height.
+// Ans :
+let m1 = prompt('Enter the base of a triangle: ');
+let m2 = prompt('Enter the height of a triangle: ');
+let m3 = (m1 * m2) / 2;
+console.log("The area of the triangle is ${m3}");
+
+// Que 14 : Check if a number is a palindrome.
+// Ans :
+
+// Que 15 : Determine if a year is a century year or not.
+// Ans :
+
+// Que 16 : Check if a number is divisible by another number.
+// Ans :
+
+// Que 17 : Sort three numbers in descending order
+// Ans :
+
+// Que 18 : Calculate the sum of digits of a number.
+// Ans :
+let r1 = parseInt(prompt('Enter a positive integer: '));
+let r2 = 0;
+for (let i = 1; i <= r1; i++) {
+    r2 += i;
+}
+console.log('The sum of digits numbers:', r2);
+
+// Que 19 :Check if a number is a strong number or not
+//  Ans :
+
+// Que 20 :Determine if a number is a perfect number or not.
+//  Ans :
+
+// Que 21 :Find the second largest element in an array.
+//  Ans :
+
+// Que 22 :Check if a number is a power of 2.
+//  Ans :
+function isPowerOf2(u) {
+   return (u && (u & (u - 1)) === 0);
+  }
+  console.log(isPowerOf2(8))
+
+// Que 23 :Calculate the profit or loss based on cost price and selling price
+//  Ans :
+
+// Que 24 :Determine the number of days in a month.
+//  Ans :
+let x=parseInt(prompt('enter month no.'))
+switch(x){
+    case 1:
+        console.log('its january')
+        break
+    case 2:
+        console.log('its february')
+        break
+    case 3:
+        console.log('its march')
+        break
+    case 4:
+        console.log('its april')
+        break
+    case 5:
+        console.log('its may')
+        break
+    case 6:
+        console.log('its june')
+        break
+    case 7:
+        console.log('its july')
+        break
+    case 8:
+        console.log('its august')
+        break
+    case 9:
+        console.log('its september')
+        break
+    case 10:
+        console.log('its october')
+        break
+    case 11:
+        console.log('its november')
+        break
+    case 12:
+        console.log('its december')
+        break
+    default:
+        console.log('invalid month no.')
+        break
+    }
+
+// Que 25 :Calculate the perimeter of a rectangle given length and width
+//  Ans :
+let y = (length, width) => 2 * (y1 + y2);
+let y1 = 8;
+let y2 = 5;
+let y3 = y(y1, y2);
+console.log("The perimeter of the rectangle is ${y3} units.");
 
 // Que 26 : Find leap year
 // Ans : 
