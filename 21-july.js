@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        //  1. Print numbers from 1 to 100.
+//  1. Print numbers from 1 to 100.
 // Ans : 
 for (let i = 1; i <= 100; i++) {
     console.log(i);
@@ -496,6 +487,3 @@ for (let i = 1; i <= n; i++) {
   sumSeries3 += (i % 2 === 0) ? i : -i;
 }
 console.log(sumSeries3);
-    </script>
-</body>
-</html>
